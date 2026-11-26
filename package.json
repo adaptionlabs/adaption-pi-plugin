@@ -1,0 +1,34 @@
+{
+  "name": "@adaptionlabs/pi",
+  "version": "0.1.0",
+  "description": "Adaption models for the pi coding agent",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adaptionlabs/adaption-pi-plugin.git"
+  },
+  "homepage": "https://github.com/adaptionlabs/adaption-pi-plugin#readme",
+  "keywords": ["pi-package", "adaption", "llm", "provider"],
+  "files": ["extensions", "src", "README.md", "CHANGELOG.md", "LICENSE"],
+  "pi": {
+    "extensions": ["./extensions/adaption.ts"]
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "test": "node --test test/*.test.ts"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-ai": "*",
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-ai": "1.6.1",
+    "@earendil-works/pi-coding-agent": "1.6.1",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  },
+  "engines": {
+    "node": ">=22.18"
+  }
+}
